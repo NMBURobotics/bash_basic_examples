@@ -1,16 +1,26 @@
 #!/bin/bash
 
-animal=lion
+# assign value to variable
+animal=tiger
+also_an_animal="snake"
 num_var=3
+array_var=(9 4 5 6)
 
-user=$1
-age=$2
+# assign the output of a command to a varaiable
+user=$(whoami)
+
+# use arguments passed to the script
+arg_1=$1
+arg_2=$2
 
 
 
-echo "My fav animal is ${animal}_${num_var} "
+echo "$animal is a cool animal"
+echo "But my fav animal is the ${animal}${also_an_animal}"
+echo "I want to have at least $num_var of those, or maybe ${array_var[0]}"
 
-echo "Hello $user (${age}), how are you"
+
+echo "Hello ${user}! You passed $arg_1 and $arg_2 to this script."
 
 echo "Number of args: $#"
 echo "Args given: $*"
