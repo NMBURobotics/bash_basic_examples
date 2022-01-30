@@ -25,7 +25,7 @@ echo "---"
 
 
 for i in apple banana pear tomhanks; do
-    echo $i
+    echo "$i"
 done
 
 
@@ -35,7 +35,7 @@ echo "---"
 
 
 
-for i in $*; do
-    echo $i
+for i in "$@"; do
+    echo "$i"
 done
 
