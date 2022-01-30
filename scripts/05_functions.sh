@@ -7,7 +7,7 @@ hello_printer() {
 
 
 arg_printer() {
-    echo $*
+    echo "$@"
 }
 
 
@@ -15,4 +15,4 @@ hello_printer
 
 arg_printer hi there old friend
 
-arg_printer $*
+arg_printer "$@"
