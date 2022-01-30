@@ -6,7 +6,6 @@ read num_a
 echo "enter number b"
 read num_b
 
-#echo "a is $num_a and b is $num_b"
 
 if [ $num_a -gt $num_b ]; then
     echo "a is greater than b"
@@ -16,7 +15,6 @@ else
     echo "a is not greater than b"	
 fi
 
-#(($num_a > $num_b))
 
 echo -e "\nLet's compare strings"
 
