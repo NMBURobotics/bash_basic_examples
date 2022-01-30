@@ -1,5 +1,8 @@
 #!/bin/bash
 
+
+# this is a comment
+
 # assign value to variable
 animal=tiger
 also_an_animal="snake"
