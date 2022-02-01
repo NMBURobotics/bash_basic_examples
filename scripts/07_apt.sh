@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "This script will install lolcat, use lolcat and remove lolcat. Please confirm that this is OK [Y/n]"
+echo "This script will install lolcat, use lolcat and remove lolcat. Is this OK [Y/n]"
 read -r reply
 
 if [ "$reply" != "Y" ]; then
@@ -8,6 +8,10 @@ if [ "$reply" != "Y" ]; then
 fi
 
 
+# Show info about program
+sudo apt show lolcat
+
+sleep 4 #give the user 4 seconds to read
 
 # Install program
 sudo apt -y install lolcat
